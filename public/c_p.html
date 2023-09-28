@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Adoption Portal - Available Pets</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+}
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+nav li {
+    display: inline-block;
+    margin-right: 20px;
+}
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.animals{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.animals div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Pet Adoption Portal</h1>
+        <nav>
+            <ul>
+                <li><a href="c_ho.html">Home</a></li>
+                <li><a href="c_p.html">Available Pets</a></li>
+                <li><a href="c_c.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="animals">
+            <div>
+                <h2>Adopt Dog</h2>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSugbFdM3Vytp-UeU2VpgspFX5sEJXe8grWXg&usqp=CAU"> <br>
+                <button id="adoptButton" onclick="dog()">Available</button>
+                <p id="val">3</p>
+            </div>
+            <div>
+                <h2>Adopt Cat</h2>
+                    <img src="https://images.unsplash.com/photo-1529778873920-4da4926a72c2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y3V0ZSUyMGNhdHxlbnwwfHwwfHx8MA%3D%3D&w=1000&q=80"width:"400" height="200"> <br>
+                    <button id="Button" onclick="cat()">Available</button>
+                    <p id="valid">2</p>
+            </div>
+            <div>
+                <h2>Adopt Horse</h2>
+                    <img src="https://images.pexels.com/photos/1996333/pexels-photo-1996333.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500S"width:"300" height="200"> <br>
+                    <button id="adoptBtn" onclick="horse()">Available</button>
+                <p id="value">10</p>
+            </div>
+            <div>
+                <h2>Adopt Goldfish</h2>
+                <img src="https://www.fishlaboratory.com/wp-content/uploads/2022/05/Fancy-Goldfish.jpeg" width="300" height="200"> <br>
+                <button id="Btn" onclick="fish()">Available</button>
+            <p id="va">20</p>
+            </div>
+        </div>
+    </main>
+            
+    <script>
+        let x=document.getElementById("val").textContent;
+        let xx=parseInt(x);
+        function dog()
+        {
+
+            xx=xx-1;
+            document.getElementById("val").innerHTML=xx; 
+            alert("enter your details here");
+            location.href="details.html";
+
+
+        }
+        let y=document.getElementById("valid").textContent;
+        let yy=parseInt(y);
+        function cat()
+        {
+
+            yy=yy-1;
+            document.getElementById("valid").innerHTML=yy; 
+            alert("enter your details here");
+            location.href="details.html";
+
+        }
+        let z=document.getElementById("value").textContent;
+        let zz=parseInt(z);
+        function horse()
+        {
+
+            zz=zz-1;
+            document.getElementById("value").innerHTML=zz; 
+            alert("enter your details here");
+            location.href="details.html";
+
+
+        }
+        let k=document.getElementById("va").textContent;
+        let kk=parseInt(k);
+        function fish()
+        {
+
+            kk=kk-1;
+            document.getElementById("va").innerHTML=kk; 
+            alert("enter your details here");
+            location.href="details.html";
+
+
+        }
+        
+
+    </script>
+</body>
+</html>
