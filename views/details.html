@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            font-style: italic;
+        }
+        .a{
+            font-size: 20px;
+            
+        }
+       
+       
+    </style>
+</head>
+<body>
+<h1>Enter your details here</h1>
+<form>
+    <div class="a">
+    <label for="firstname"><b>First name: <br></b></label>
+    <input type="text" name="firstname" placeholder="Enter Fname" required>
+    <br><br>
+    <label for="lastname"><b>Last name: <br></b></label>
+    <input type="text" name="lastname" placeholder="Enter Lname" required>
+    <br><br>
+    <label for="email"><b>Email: </b><br><br></label>
+    <input type="email" name="email" placeholder="Enter MailID"  required>
+    <br><br>
+    <label for="number"><b>Contact no: </b><br></label>
+    <input type="text" name="text" placeholder="Enter Contact number" required>
+    <br><br>
+    <label for="number"><b>Address: <br></b></label>
+    <input type="text" name="number" placeholder="Enter Adress"  required>
+    <br><br>
+    <button  type="button" id="button" onclick="sub()">Submit</button>
+    <p id="id1"></p>
+</div>
+</form>
+
+    <script>
+       function sub(){
+        alert("Sucessfully completed your adopation process,we will contact you within 24hrs");
+       }
+
+    </script>
+</body>
+</html>
